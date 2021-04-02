@@ -110,7 +110,7 @@ public class HomePageService {
             // For full list of available annotations, see http://g.co/cloud/vision/docs
             for (FaceAnnotation annotation : res.getFaceAnnotationsList()) {
                 emotion.put("joyLikelihood", annotation.getJoyLikelihood().toString());
-                emotion.put("sorrowLikelihood", annotation.getJoyLikelihood().toString());
+                emotion.put("sorrowLikelihood", annotation.getSorrowLikelihood().toString());
                 }
             }
         }
